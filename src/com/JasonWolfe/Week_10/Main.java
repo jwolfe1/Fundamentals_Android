@@ -32,4 +32,19 @@ class AddressBook implements Iterable<Contact> {
 }
 
 public class Main {
+
+    public static void main(String[] args) {
+
+        Contact steve = new Contact("steve", "steve@email.com");
+        Contact mike = new Contact("mike", "mike@mike.com");
+
+        List<Contact> addressBook = new ArrayList<>();
+
+        addressBook.add(steve);
+        addressBook.add(mike);
+
+        for(Contact contact : addressBook) {
+            contact.display();
+        }
+    }
 }
